@@ -11,6 +11,8 @@
 # production
 /build
 
+/src/projects/banking/API.js
+
 # misc
 .DS_Store
 .env.local

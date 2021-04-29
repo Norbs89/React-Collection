@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 // import { patchReminder, fetchTasks, addToDb, DeleteFromDb } from "./API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./TaskApp.css";
@@ -13,21 +13,13 @@ const TaskApp = () => {
   const [showAddTask, SetShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
 
-  // useEffect(() => {
-  //   fetchTasks().then(({ data }) => {
-  //     setTasks(data);
-  //   });
-  // }, []);
-
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1;
     const newTask = { id, ...task };
-    // addToDb(newTask);
     setTasks([...tasks, newTask]);
   };
 
   const deleteTask = (id) => {
-    // DeleteFromDb(id);
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
@@ -35,8 +27,7 @@ const TaskApp = () => {
     setTasks(
       tasks.map((task) => {
         return task.id === id
-          ? // ? (patchReminder(id, !task.reminder),
-            {
+          ? {
               ...task,
               reminder: !task.reminder,
             }
@@ -74,7 +65,7 @@ const TaskApp = () => {
           )}
         />
 
-        <Route path="/about" component={About} />
+        <Route path="/tasktracker/about" component={About} />
         <Footer />
       </div>
     </Router>

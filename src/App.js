@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import ChooseScreen from "./components/ChooseScreen";
 import Footer from "./components/Footer";
 import TaskApp from "./projects/task/TaskApp";
+import BankingApp from "./projects/banking/BankingApp";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           </Route>
           <Route path="/tasktracker">
             <TaskApp />
+          </Route>
+          <Route path="/banking">
+            <BankingApp />
           </Route>
         </Switch>
         <Footer />
