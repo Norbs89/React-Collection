@@ -4,6 +4,7 @@ import ChooseScreen from "./components/ChooseScreen";
 import Footer from "./components/Footer";
 import TaskApp from "./projects/task/TaskApp";
 import BankingApp from "./projects/banking/BankingApp";
+import CocktailApp from "./projects/cocktail/CocktailApp";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/banking">
             <BankingApp />
+          </Route>
+          <Route path="/cocktail">
+            <CocktailApp />
           </Route>
         </Switch>
         <Footer />

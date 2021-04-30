@@ -10,6 +10,15 @@ Libraries used throughout the projects include:
 - react-icons
 - axios
 - moment.js
+- react-bootstrap
+- react-modal
+
+## Version 0.3.0
+
+- Readme has been updated to reflect the project.
+- Gitignore has been updated.
+- Migrated code for the 3rd and final planned project - Cocktail Recipe Generator App.
+- Installed react-bootstrap and react-modal as these were required dependencies for the Recipe Generator App.
 
 ## Version 0.2.1
 

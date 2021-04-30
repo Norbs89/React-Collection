@@ -12,6 +12,7 @@
 /build
 
 /src/projects/banking/API.js
+/src/projects/cocktail/drinksDB.js
 
 # misc
 .DS_Store
