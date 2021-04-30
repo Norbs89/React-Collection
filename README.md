@@ -8,6 +8,14 @@ Libraries used throughout the projects include:
 
 - react-router-dom
 - react-icons
+- axios
+- moment.js
+
+## Version 0.2.1
+
+- Readme has been updated to reflect the project.
+- Fixed unsopported API requests in Banking App. The current API used for conversion rates is: https://www.exchangerate-api.com/
+- Minor styling clashes with classes are fixed.
 
 ## Version 0.1.5
 
@@ -17,7 +25,7 @@ Libraries used throughout the projects include:
 
 State handling methods are different across the apps. Long time optimisation goal added to unify state handling methods.
 
-## Version 0.1 (initial commit)
+## Version 0.1.0 (initial commit)
 
 The project has been created with the purpose of bundling my smaller React.js SPA's together.
 It is currently planned to feature 3 mini apps:

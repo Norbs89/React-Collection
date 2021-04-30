@@ -22,10 +22,10 @@ class BalanceManager extends React.Component {
 
   componentDidMount() {
     GetUSD().then((res) => {
-      this.setState({ usd: res.data.rates.USD });
+      this.setState({ usd: res.data.conversion_rates.USD });
     });
     GetGBP().then((res) => {
-      this.setState({ gbp: res.data.rates.GBP });
+      this.setState({ gbp: res.data.conversion_rates.GBP });
     });
   }
 
