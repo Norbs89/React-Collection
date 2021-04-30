@@ -1,4 +1,4 @@
-.popup {
+/* .popup {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,9 +23,9 @@ body {
   background-size: cover;
 }
 
-/* #root {
+#root {
   height: 100vh;
-} */
+}
 
 .allContent {
   display: flex;
@@ -116,4 +116,4 @@ p {
   background-color: #c42021;
   transition-duration: 0.4s;
   overflow: hidden;
-}
+} */

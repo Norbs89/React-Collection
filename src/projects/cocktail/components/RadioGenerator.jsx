@@ -3,10 +3,10 @@ import React from "react";
 const RadioGenerator = (props, header) => {
   const refObj = {};
   return (
-    <div key={header} class="form-section">
+    <div key={header} className="form-section">
       <h3 className="form-section-header">{header}</h3>
       <div>
-        {props.drinks.map(drink => {
+        {props.drinks.map((drink) => {
           if (!refObj[drink[header]]) {
             refObj[drink[header]] = true;
             return (
@@ -15,7 +15,7 @@ const RadioGenerator = (props, header) => {
                   type="radio"
                   name={header}
                   value={drink[header]}
-                  onChange={event => {
+                  onChange={(event) => {
                     props.handleChange(header, event.target.value);
                   }}
                 />

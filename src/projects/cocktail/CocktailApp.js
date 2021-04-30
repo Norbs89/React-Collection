@@ -1,10 +1,9 @@
 import React from "react";
 import "./CocktailApp.css";
 import { recipes, drinks } from "./drinksDB.js";
-import Modal from "react-modal";
 import MainContent from "./components/MainContent";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { Container, Row, Col } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import Recipe from "./components/Recipe";
 
 class CocktailApp extends React.Component {
   state = {
@@ -16,7 +15,6 @@ class CocktailApp extends React.Component {
     outputRecipe: "",
     drinkName: "",
     extraOffered: "",
-    isOpen: false,
   };
 
   handleChange = (header, value) => {
@@ -30,12 +28,6 @@ class CocktailApp extends React.Component {
     });
   };
 
-  closePopup = (event) => {
-    this.setState((currentState) => {
-      return { isOpen: !currentState.isOpen };
-    });
-  };
-
   generateRecipe = () => {
     const { spirit, mixer } = this.state.userInput;
     drinks.forEach((drink) => {
@@ -44,59 +36,39 @@ class CocktailApp extends React.Component {
           extraOffered: drink.extra,
           outputRecipe: recipes[drink.recipe],
           drinkName: drink.name,
-          isOpen: true,
         });
       }
     });
   };
 
   render() {
-    const {
-      userInput,
-      isOpen,
-      drinkName,
-      outputRecipe,
-      extraOffered,
-    } = this.state;
+    const { userInput, drinkName, outputRecipe, extraOffered } = this.state;
 
     return (
-      <>
-        <Container>
-          <Row className="justify-content-md-center">
-            <Col className="allContent">
-              <MainContent
-                drinks={drinks}
-                userInput={userInput}
-                handleChange={this.handleChange}
-              />
+      <Router>
+        <Switch>
+          <Route exact path="/cocktail">
+            <MainContent
+              drinks={drinks}
+              userInput={userInput}
+              handleChange={this.handleChange}
+            />
+            <Link to="/cocktail/recipe">
               <button className="recipe-button" onClick={this.generateRecipe}>
                 Generate Recipe
               </button>
-            </Col>
-          </Row>
-        </Container>
-
-        <Modal className="popup" ariaHideApp={false} isOpen={isOpen}>
-          <Container>
-            <Row className="justify-content-center">
-              <div className="popup-text">
-                <h2>{drinkName}</h2>
-                <p>{outputRecipe}</p>
-                {userInput.extra === extraOffered || (
-                  <p>
-                    Top Tip: For best results, instead of {userInput.extra} try
-                    using {extraOffered} for a more authentic cocktail
-                    experience!
-                  </p>
-                )}
-              </div>
-              <button className="modal-button" onClick={this.closePopup}>
-                Close
-              </button>
-            </Row>
-          </Container>
-        </Modal>
-      </>
+            </Link>
+          </Route>
+          <Route path="/cocktail/recipe">
+            <Recipe
+              drinkName={drinkName}
+              outputRecipe={outputRecipe}
+              userInput={userInput.extra}
+              extraOffered={extraOffered}
+            />
+          </Route>
+        </Switch>
+      </Router>
     );
   }
 }

@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import { patchReminder, fetchTasks, addToDb, DeleteFromDb } from "./API";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./TaskApp.css";
 
@@ -64,7 +63,6 @@ const TaskApp = () => {
             </>
           )}
         />
-
         <Route path="/tasktracker/about" component={About} />
         <Footer />
       </div>
