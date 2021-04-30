@@ -11,29 +11,31 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.3.7
+
+- Minimal CSS styling applied (flexbox).
+- Homepage has been populated with first draft of data.
+- Footer has been fixed to bottom of the page - consistent on every page/render.
+
 ## Version 0.3.5
 
-- Readme has been updated to reflect the project.
-- Stripped the project from react-bootstrap and react-modal as to prevent bloated codebase.
+- Stripped the project from react-bootstrap and react-modal to prevent bloated codebase.
 - Restructured the Cocktail Recipe Generator App to function similarly to Task Tracker: Added a new component, recipe output is now rendered separately.
 - Disabled most CSS files to prevent style clashes and specificity issues with classes.
 
 ## Version 0.3.0
 
-- Readme has been updated to reflect the project.
 - Gitignore has been updated.
 - Migrated code for the 3rd and final planned project - Cocktail Recipe Generator App.
 - Installed react-bootstrap and react-modal as these were required dependencies for the Recipe Generator App.
 
 ## Version 0.2.1
 
-- Readme has been updated to reflect the project.
 - Fixed unsopported API requests in Banking App. The current API used for conversion rates is: https://www.exchangerate-api.com/
 - Minor styling clashes with classes are fixed.
 
 ## Version 0.1.5
 
-- Readme has been updated to reflect the project.
 - Migrated code for the second mini app - Banking App. Whilst the app itself is functional (styling is conflicting) the API for exchange rates (that was used back when the app was created) is no longer supporting certain endpoints that are integral for core features.
 - Some code linting done.
 

@@ -8,28 +8,30 @@ import CocktailApp from "./projects/cocktail/CocktailApp";
 
 function App() {
   return (
-    <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/">
-            <Homepage />
-          </Route>
-          <Route path="/projects">
-            <ChooseScreen />
-          </Route>
-          <Route path="/tasktracker">
-            <TaskApp />
-          </Route>
-          <Route path="/banking">
-            <BankingApp />
-          </Route>
-          <Route path="/cocktail">
-            <CocktailApp />
-          </Route>
-        </Switch>
+    <Router>
+      <div className="App">
+        <div className="app-div">
+          <Switch>
+            <Route exact path="/">
+              <Homepage />
+            </Route>
+            <Route path="/projects">
+              <ChooseScreen />
+            </Route>
+            <Route path="/tasktracker">
+              <TaskApp />
+            </Route>
+            <Route path="/banking">
+              <BankingApp />
+            </Route>
+            <Route path="/cocktail">
+              <CocktailApp />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 

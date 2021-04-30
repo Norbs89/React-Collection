@@ -1,1 +1,22 @@
+.App {
+  max-width: 80%;
+  margin: 3em auto; /*set this to 2em in small view*/
+  overflow: auto;
+  min-height: 85vh;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 
+.app-div {
+  flex: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
