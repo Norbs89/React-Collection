@@ -1,3 +1,4 @@
+import descriptions from "../descriptions";
 import { Link } from "react-router-dom";
 
 const Card = ({ projectName }) => {
@@ -10,13 +11,11 @@ const Card = ({ projectName }) => {
   } else if (projectName === "Cocktail Generator") {
     project = "cocktail";
   }
-
   return (
-    <div>
-      <Link to={`/${project}`}>
-        <h4>{projectName}</h4>
-      </Link>
-    </div>
+    <Link to={`/${project}`} className="card">
+      <h4>{projectName}</h4>
+      <p>{descriptions[project]}</p>
+    </Link>
   );
 };
 

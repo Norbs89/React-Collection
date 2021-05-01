@@ -2,9 +2,9 @@ import Card from "./Card";
 
 const ChooseScreen = () => {
   return (
-    <div>
+    <div className="project-main-div">
       <h2>Choose projects</h2>
-      <div>
+      <div className="card-container">
         <Card projectName="Cocktail Generator" />
         <Card projectName="Banking App" />
         <Card projectName="Task Tracker" />

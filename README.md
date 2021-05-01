@@ -11,6 +11,12 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.4.0
+
+- CSS styling applied to homepage and 'choose project' page.
+- Added descriptions to project cards on 'choose project' page.
+- Code linting.
+
 ## Version 0.3.7
 
 - Minimal CSS styling applied (flexbox).
