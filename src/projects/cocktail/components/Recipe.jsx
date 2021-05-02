@@ -1,6 +1,12 @@
 import { Link } from "react-router-dom";
 
-const Recipe = ({ drinkName, outputRecipe, userInput, extraOffered }) => {
+const Recipe = ({
+  drinkName,
+  outputRecipe,
+  userInput,
+  extraOffered,
+  reset,
+}) => {
   return (
     <>
       <div className="popup-text">
@@ -14,7 +20,9 @@ const Recipe = ({ drinkName, outputRecipe, userInput, extraOffered }) => {
         )}
       </div>
       <Link to="/cocktail">
-        <button className="modal-button">Close</button>
+        <button className="modal-button" onClick={reset}>
+          Close
+        </button>
       </Link>
     </>
   );

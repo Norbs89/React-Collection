@@ -11,6 +11,14 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.5.0
+
+- Further CSS styling applied to homepage and 'choose project' page.
+- Task Tracker App is fully styled.
+- Task Tracker App's 'about' page is populated.
+- Minimal CSS styling applied to Cocktail Recipe Generator.
+- Bug fixes to Cocktail Recipe Generator.
+
 ## Version 0.4.5
 
 - Created a folder for styles.

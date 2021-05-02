@@ -3,7 +3,7 @@ const Button = ({ color, text, onClick }) => {
     <button
       onClick={onClick}
       style={{ backgroundColor: color }}
-      className="btn"
+      className="bttn bttn-task"
     >
       {text}
     </button>
@@ -11,7 +11,7 @@ const Button = ({ color, text, onClick }) => {
 };
 
 Button.deafultProps = {
-  color: "lightblue",
+  color: "#ccff00",
 };
 
 export default Button;

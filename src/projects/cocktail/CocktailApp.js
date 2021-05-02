@@ -1,5 +1,5 @@
 import React from "react";
-import "./CocktailApp.css";
+import "../../styles/CocktailApp.css";
 import { recipes, drinks } from "./drinksDB.js";
 import MainContent from "./components/MainContent";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -28,8 +28,28 @@ class CocktailApp extends React.Component {
     });
   };
 
-  generateRecipe = () => {
+  resetForm = () => {
+    this.setState((currentState) => {
+      return {
+        userInput: {
+          spirit: "",
+          mixer: "",
+          extra: "",
+        },
+        outputRecipe: "",
+        drinkName: "",
+        extraOffered: "",
+      };
+    });
+  };
+
+  generateRecipe = (e) => {
     const { spirit, mixer } = this.state.userInput;
+    if (!spirit || !mixer) {
+      e.preventDefault();
+      alert("Please choose an option!");
+      return;
+    }
     drinks.forEach((drink) => {
       if (spirit === drink.spirit && mixer === drink.mixer) {
         this.setState({
@@ -46,28 +66,33 @@ class CocktailApp extends React.Component {
 
     return (
       <Router>
-        <Switch>
-          <Route exact path="/cocktail">
-            <MainContent
-              drinks={drinks}
-              userInput={userInput}
-              handleChange={this.handleChange}
-            />
-            <Link to="/cocktail/recipe">
-              <button className="recipe-button" onClick={this.generateRecipe}>
-                Generate Recipe
-              </button>
-            </Link>
-          </Route>
-          <Route path="/cocktail/recipe">
-            <Recipe
-              drinkName={drinkName}
-              outputRecipe={outputRecipe}
-              userInput={userInput.extra}
-              extraOffered={extraOffered}
-            />
-          </Route>
-        </Switch>
+        <div className="container">
+          <Switch>
+            <Route exact path="/cocktail">
+              <MainContent
+                drinks={drinks}
+                userInput={userInput}
+                handleChange={this.handleChange}
+              />
+              <Link to="/cocktail/recipe">
+                <button className="recipe-button" onClick={this.generateRecipe}>
+                  Generate Recipe
+                </button>
+              </Link>
+            </Route>
+            <Route path="/cocktail/recipe">
+              {outputRecipe && (
+                <Recipe
+                  drinkName={drinkName}
+                  outputRecipe={outputRecipe}
+                  userInput={userInput.extra}
+                  extraOffered={extraOffered}
+                  reset={this.resetForm}
+                />
+              )}
+            </Route>
+          </Switch>
+        </div>
       </Router>
     );
   }

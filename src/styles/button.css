@@ -1,21 +1,50 @@
-.bttn-main {
-  width: 10em;
-  height: 3.5em;
-  text-align: center;
-  line-height: 3.5em;
+.bttn {
   text-transform: uppercase;
   text-decoration: none !important;
   display: block;
-  margin: 2em auto;
-  box-shadow: 0.5px 0.5px 2px #141115;
-  background-color: #ccff00;
-  color: #66717e;
   transition: all 0.25s ease-in-out;
+  text-align: center;
+  box-shadow: 0.5px 0.5px 2px #141115;
+}
+
+.bttn-main {
+  width: 10em;
+  height: 3.5em;
+  line-height: 3.5em;
+  background-color: #ccff00;
+  margin: 2em auto;
+  color: #66717e;
   font-weight: 700;
 }
 
+.bttn:active {
+  transform: scale(0.9, 0.9);
+}
+
+.bttn:hover,
 .bttn-main:hover {
   box-shadow: 1.5px 1.5px 10px #141115;
   background-color: white;
   transform: scale(1.05, 1.05);
+}
+
+.bttn-task {
+  font-size: 0.9em;
+  padding: 0.6em 1.1em;
+  margin: 5px;
+  background-color: #ccff00;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.bttn-save {
+  font-size: 0.9em;
+  padding: 0.6em 1.1em;
+  margin: auto;
+  background-color: #141115;
+  color: #eef1ef;
+}
+
+.bttn-save:hover {
+  color: #141115;
 }

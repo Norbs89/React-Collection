@@ -11,7 +11,7 @@ const Homepage = () => {
         various dependencies).
       </p>
 
-      <Link to="/projects" className="bttn-main">
+      <Link to="/projects" className="bttn bttn-main">
         App Selector
       </Link>
     </div>

@@ -9,9 +9,11 @@
   font-family: "IBM Plex Mono", monospace;
   text-shadow: 0.5px 0.5px 1px #66717e;
   padding: 1% 8%;
-  background: rgba(238, 241, 239, 0.8);
+  background: rgba(238, 241, 239, 0.9);
   font-size: 1.8em;
   letter-spacing: 0.05em;
+  border: 0.05px solid black;
+  border-radius: 1px;
 }
 .card-container {
   display: flex;
@@ -27,6 +29,7 @@
   box-shadow: 2px 2px 4px rgba(20, 17, 21, 0.6);
   transition: all 0.25s ease-in-out;
   border: 0.05px solid black;
+  border-radius: 1px;
 }
 
 .card:hover {
