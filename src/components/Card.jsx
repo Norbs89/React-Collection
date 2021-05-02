@@ -6,7 +6,7 @@ const Card = ({ projectName }) => {
 
   if (projectName === "Task Tracker") {
     project = "tasktracker";
-  } else if (projectName === "Banking App") {
+  } else if (projectName === "Banking Interface") {
     project = "banking";
   } else if (projectName === "Cocktail Generator") {
     project = "cocktail";

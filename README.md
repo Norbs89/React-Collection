@@ -11,6 +11,15 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.4.5
+
+- Created a folder for styles.
+- Created separate stylesheets for components.
+- Further CSS styling applied to homepage and 'choose project' page.
+- CSS styling applied to footer.
+- Code linting.
+- Deleted unnecessary files.
+
 ## Version 0.4.0
 
 - CSS styling applied to homepage and 'choose project' page.

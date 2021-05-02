@@ -1,0 +1,21 @@
+.bttn-main {
+  width: 10em;
+  height: 3.5em;
+  text-align: center;
+  line-height: 3.5em;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  display: block;
+  margin: 2em auto;
+  box-shadow: 0.5px 0.5px 2px #141115;
+  background-color: #ccff00;
+  color: #66717e;
+  transition: all 0.25s ease-in-out;
+  font-weight: 700;
+}
+
+.bttn-main:hover {
+  box-shadow: 1.5px 1.5px 10px #141115;
+  background-color: white;
+  transform: scale(1.05, 1.05);
+}
