@@ -11,6 +11,12 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.6.0
+
+- Cocktail Recipe Generator is fully styled.
+- Code linting.
+- Minor changes in Cocktail Recipe Generator's codebase to help with styling.
+
 ## Version 0.5.0
 
 - Further CSS styling applied to homepage and 'choose project' page.

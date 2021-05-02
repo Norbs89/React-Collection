@@ -74,8 +74,11 @@ class CocktailApp extends React.Component {
                 userInput={userInput}
                 handleChange={this.handleChange}
               />
-              <Link to="/cocktail/recipe">
-                <button className="recipe-button" onClick={this.generateRecipe}>
+              <Link to="/cocktail/recipe" className="c-link">
+                <button
+                  className="bttn cocktail-bttn"
+                  onClick={this.generateRecipe}
+                >
                   Generate Recipe
                 </button>
               </Link>
