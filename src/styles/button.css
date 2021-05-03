@@ -44,10 +44,6 @@
   color: #eef1ef;
 }
 
-.bttn-save:hover {
-  color: #141115;
-}
-
 .cocktail-bttn,
 .recipe-close-bttn {
   color: #66717e;
@@ -61,4 +57,55 @@
 
 .c-link {
   text-decoration: none !important;
+}
+
+.convert-bttn {
+  color: #66717e;
+  padding: 0.6em;
+  background-color: #ccff00;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.quick-add-bttn {
+  color: white;
+  padding: 0.6em;
+  background-color: #66717e;
+  border-radius: 1px;
+  cursor: pointer;
+  margin: 0 2%;
+}
+
+.quick-add-bttn:hover,
+.withdraw-bttn:hover,
+.bttn-save:hover,
+.history-bttn:hover {
+  color: #141115;
+}
+
+.add-bttn,
+.withdraw-bttn {
+  margin: 0 5%;
+  padding: 0.6em;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.add-bttn {
+  background-color: #ccff00;
+  color: #66717e;
+}
+
+.withdraw-bttn {
+  color: white;
+  background-color: #66717e;
+}
+
+.history-bttn {
+  color: white;
+  background-color: #66717e;
+  margin: 1% auto;
+  padding: 0.6em;
+  border-radius: 1px;
+  cursor: pointer;
 }

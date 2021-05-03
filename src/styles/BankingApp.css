@@ -1,0 +1,94 @@
+.b-container {
+  width: 50%;
+  margin: 2em auto;
+  border: 0.05px solid black;
+  padding: 1.7em 2em;
+  border-radius: 1px;
+  background: rgba(238, 241, 239, 0.9);
+}
+
+.banking-main-div {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  text-align: center;
+}
+
+.banking-header {
+  padding: 2% 0;
+  background-color: #66717e;
+  width: 100%;
+  color: white;
+}
+
+.banking-header h1 {
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  text-shadow: -0.6px 0 black, 0 0.6px black, 0.6px 0 black, 0 -0.6px black;
+}
+
+.balance-display {
+  display: flex;
+  justify-content: space-around;
+  padding: 4% 0;
+  border-bottom: 0.1px solid #66717e;
+  align-items: center;
+}
+
+.exchange-display {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  padding: 1% 0;
+  border-bottom: 0.1px solid #66717e;
+}
+
+.small-print {
+  font-size: 0.6em;
+}
+.quick-add-display {
+  padding: 1% 0;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  padding: 2% 0;
+}
+
+.balance-custom-form {
+  padding: 3% 0;
+  border-bottom: 0.1px solid #66717e;
+}
+
+.balance-form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.value-buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 40%;
+}
+
+.history-display {
+  margin: 5% auto;
+}
+
+.deposit,
+.withdraw {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.05px solid rgba(102, 113, 126, 0.2);
+}
+
+.deposit {
+  color: darkgreen;
+}
+
+.withdraw {
+  color: darkred;
+}

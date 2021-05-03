@@ -3,29 +3,32 @@ import React from "react";
 const ModifyAmountForm = ({ modifyAmount, handleInput, value, currency }) => {
   return (
     <form
+      className="balance-form"
       onSubmit={(e) => {
         e.preventDefault();
       }}
     >
-      <label className="addLabel" htmlFor="addCustomValue">
-        Please Enter Amount:
-      </label>
-      <span> {currency}</span>
-      <input
-        type="text"
-        id="addCustomValue"
-        name="modifyValue"
-        placeholder="5.00"
-        onChange={(e) => handleInput(e.target.value, e.target.name)}
-        value={value}
-      />
-      <span className="valueButtons">
+      <span>
+        <label className="bold-text" htmlFor="addCustomValue">
+          Please Enter Amount:
+        </label>
+        <span> {currency}</span>
+        <input
+          type="text"
+          id="addCustomValue"
+          name="modifyValue"
+          placeholder="5.00"
+          onChange={(e) => handleInput(e.target.value, e.target.name)}
+          value={value}
+        />
+      </span>
+      <span className="value-buttons">
         <button
           type="submit"
           onClick={(e) => {
             modifyAmount("add");
           }}
-          className="button addButton"
+          className="bttn add-bttn"
         >
           Add
         </button>
@@ -34,7 +37,7 @@ const ModifyAmountForm = ({ modifyAmount, handleInput, value, currency }) => {
           onClick={(e) => {
             modifyAmount("withdraw");
           }}
-          className="button withdrawButton"
+          className="bttn withdraw-bttn"
         >
           Withdraw
         </button>

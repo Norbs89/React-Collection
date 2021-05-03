@@ -11,6 +11,13 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.7.0
+
+- Banking interface is fully styled.
+- Minor changes in Banking Interface's codebase to help with styling.
+- Code linting.
+- Deleted unnecessary files.
+
 ## Version 0.6.0
 
 - Cocktail Recipe Generator is fully styled.

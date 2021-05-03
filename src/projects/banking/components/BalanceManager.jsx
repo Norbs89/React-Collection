@@ -79,10 +79,10 @@ class BalanceManager extends React.Component {
     if (modifyValue.match(/^\d+(\.\d+)?$/)) {
       if (name === "withdraw") {
         this.addBalance(-Number(modifyValue));
-        this.addToHistory("withdraw", Number(modifyValue));
+        this.addToHistory("withdraw", Number(modifyValue).toFixed(2));
       } else {
         this.addBalance(Number(modifyValue));
-        this.addToHistory("add", Number(modifyValue));
+        this.addToHistory("add", Number(modifyValue).toFixed(2));
       }
       this.setState({ modifyValue: "" });
     } else {
@@ -142,22 +142,30 @@ class BalanceManager extends React.Component {
       gbp,
     } = this.state;
     return (
-      <div className="balanceMainDiv">
-        <section className="balanceDisplay">
-          Current Balance: {currency}
-          {currentBalance}
-          <button className="button" onClick={this.convert}>
+      <div className="balance-main-div">
+        <section className="balance-display">
+          <span className="bold-text">
+            {" "}
+            Current Balance: {currency}
+            {currentBalance}
+          </span>
+          <button className="bttn convert-bttn" onClick={this.convert}>
             {converterText}
           </button>
         </section>
-        <section className="exchangeDisplay">
-          <p>Current Exchange Rates:</p>
+        <section className="exchange-display">
+          {" "}
+          <p className="bold-text">Current Exchange Rates:</p>
           <span>£1.00 = ${usd.toFixed(2)}</span>
           <span>$1.00 = £{gbp.toFixed(2)}</span>
+          <p className="small-print">
+            By using the convert feature your balance is subject to exchange
+            differences. Repeated conversion may result in balance loss/gain.
+          </p>
         </section>
-        <section>
-          <p>Choose an amount to deposit:</p>
-          <div className="buttonRow">
+        <section className="quick-add-display">
+          <p className="bold-text">Choose an amount to deposit:</p>
+          <div className="button-row">
             {quickAddOpt.map((number) => {
               return (
                 <QuickAddButton
@@ -172,7 +180,7 @@ class BalanceManager extends React.Component {
           </div>
         </section>
         <p>OR</p>
-        <section className="balanceForm">
+        <section className="balance-custom-form">
           <ModifyAmountForm
             modifyAmount={this.modifyAmount}
             handleInput={this.handleInput}
@@ -181,11 +189,11 @@ class BalanceManager extends React.Component {
           />
           {warning && <p>Please enter a valid amount!</p>}
         </section>
-        <section className="history">
-          <button className="button" onClick={this.showHistory}>
+        <section className="history-display">
+          <button className="bttn history-bttn" onClick={this.showHistory}>
             {buttonText}
           </button>
-          <div className="historyList">
+          <div className="history-list">
             {historyShown &&
               (accountHistory.length === 0 ? (
                 <p>No transactions to show!</p>

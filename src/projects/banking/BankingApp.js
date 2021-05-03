@@ -1,12 +1,12 @@
 import React from "react";
-import "./BankingApp.css";
+import "../../styles/BankingApp.css";
 import Header from "./components/Header";
 import BalanceManager from "./components/BalanceManager";
 
 const BankingApp = () => {
   return (
-    <div className="App">
-      <div className="mainContent">
+    <div className="b-container">
+      <div className="banking-main-div">
         <Header />
         <BalanceManager />
       </div>
