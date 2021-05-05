@@ -1,11 +1,16 @@
 import Card from "./Card";
 import Navbar from "./Navbar";
+import { useSpring, animated } from "react-spring";
 
 const ChooseScreen = () => {
+  const styles = useSpring({
+    from: { opacity: 0 },
+    to: { opacity: 1 },
+  });
   return (
     <>
       <Navbar backPath={"/"} />
-      <div className="project-main-div">
+      <animated.div style={styles} className="project-main-div">
         <h2>
           {" "}
           <span className="char">{">"}</span>Choose a project below:
@@ -16,7 +21,7 @@ const ChooseScreen = () => {
           <Card projectName="Banking Interface" />
           <Card projectName="Task Tracker" />
         </div>
-      </div>
+      </animated.div>
     </>
   );
 };

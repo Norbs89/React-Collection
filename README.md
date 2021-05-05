@@ -10,6 +10,12 @@ Libraries used throughout the projects include:
 - react-icons
 - axios
 - moment.js
+- react-spring
+
+## Version 0.8.2
+
+- Installed react-springs dependency for animations.
+- Animated homepage and 'choose project' page.
 
 ## Version 0.8.0
 
