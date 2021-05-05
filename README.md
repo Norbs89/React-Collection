@@ -11,6 +11,15 @@ Libraries used throughout the projects include:
 - axios
 - moment.js
 
+## Version 0.8.0
+
+- Footer has been set up correctly and fully styled.
+- Navbar has been integrated.
+- Navbar has been fully styled.
+- Minor changes in CSS styling to accomodate navbar.
+- Changed a few file names for consistency.
+- Code linting.
+
 ## Version 0.7.0
 
 - Banking interface is fully styled.

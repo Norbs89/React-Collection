@@ -1,9 +1,9 @@
 import React from "react";
-import "../../styles/CocktailApp.css";
 import { recipes, drinks } from "./drinksDB.js";
 import MainContent from "./components/MainContent";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Recipe from "./components/Recipe";
+import Navbar from "../../components/Navbar";
 
 class CocktailApp extends React.Component {
   state = {
@@ -65,38 +65,41 @@ class CocktailApp extends React.Component {
     const { userInput, drinkName, outputRecipe, extraOffered } = this.state;
 
     return (
-      <Router>
-        <div className="container">
-          <Switch>
-            <Route exact path="/cocktail">
-              <MainContent
-                drinks={drinks}
-                userInput={userInput}
-                handleChange={this.handleChange}
-              />
-              <Link to="/cocktail/recipe" className="c-link">
-                <button
-                  className="bttn cocktail-bttn"
-                  onClick={this.generateRecipe}
-                >
-                  Generate Recipe
-                </button>
-              </Link>
-            </Route>
-            <Route path="/cocktail/recipe">
-              {outputRecipe && (
-                <Recipe
-                  drinkName={drinkName}
-                  outputRecipe={outputRecipe}
-                  userInput={userInput.extra}
-                  extraOffered={extraOffered}
-                  reset={this.resetForm}
+      <>
+        <Navbar backPath={"/projects"} />
+        <Router>
+          <div className="c-container">
+            <Switch>
+              <Route exact path="/cocktail">
+                <MainContent
+                  drinks={drinks}
+                  userInput={userInput}
+                  handleChange={this.handleChange}
                 />
-              )}
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+                <Link to="/cocktail/recipe" className="c-link">
+                  <button
+                    className="bttn cocktail-bttn"
+                    onClick={this.generateRecipe}
+                  >
+                    Generate Recipe
+                  </button>
+                </Link>
+              </Route>
+              <Route path="/cocktail/recipe">
+                {outputRecipe && (
+                  <Recipe
+                    drinkName={drinkName}
+                    outputRecipe={outputRecipe}
+                    userInput={userInput.extra}
+                    extraOffered={extraOffered}
+                    reset={this.resetForm}
+                  />
+                )}
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </>
     );
   }
 }
