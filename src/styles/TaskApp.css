@@ -79,8 +79,8 @@
   transform: scale(1.5);
 }
 
-footer {
-  margin-top: 3em;
+.task-footer {
+  margin-top: 2em;
   text-align: center;
 }
 

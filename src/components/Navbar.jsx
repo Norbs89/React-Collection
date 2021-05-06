@@ -9,6 +9,9 @@ const Navbar = ({ backPath }) => {
       <Link to="/" className="nav-text">
         Home
       </Link>
+      <Link to="/about" className="nav-text">
+        About
+      </Link>
     </nav>
   );
 };

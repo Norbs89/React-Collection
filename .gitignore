@@ -13,6 +13,7 @@
 
 /src/projects/banking/API.js
 /src/projects/cocktail/drinksDB.js
+/src/descriptions.js
 
 # misc
 .DS_Store
@@ -24,3 +25,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local Netlify folder
+.netlify

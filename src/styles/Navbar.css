@@ -1,0 +1,25 @@
+.navbar {
+  display: flex;
+  margin-top: 0;
+  max-height: 5%;
+  width: 100%;
+  background: rgba(102, 113, 126, 0.5);
+}
+
+.nav-text {
+  font-family: "IBM Plex Mono", monospace;
+  transition: all 0.25s ease-in-out;
+  color: rgba(238, 241, 239, 0.9);
+  text-decoration: none !important;
+  font-size: 1.2em;
+  margin: auto;
+  font-weight: 700;
+  text-shadow: -0.6px 0 black, 0 0.6px black, 0.6px 0 black, 0 -0.6px black;
+}
+
+.nav-text:hover {
+  text-shadow: -0.6px 0.6px 2px black, 0.6px 0.6px 2px black,
+    0.6px 0.6px 2px black, 0.6px -0.6px 2px black;
+  transform: scale(1.1);
+  color: #ccff00;
+}

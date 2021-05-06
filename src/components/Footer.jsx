@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="app-footer">
       <a
-        href="https://github.com/Norbs89"
+        href="https://github.com/Norbs89/React-Collection"
         className="footer-link"
         target="_blank"
         rel="noopener noreferrer"
@@ -33,6 +33,9 @@ const Footer = () => {
       >
         {">"}FreeCodeCamp_
       </a>
+      <span className="ver-num">
+        {"{"}Ver. 1.0.0{"}"}
+      </span>
     </footer>
   );
 };

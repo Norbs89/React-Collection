@@ -1,16 +1,64 @@
 # React Collection
 
-### (work in progress)
+A website built with React.js.
 
-A website featuring several mini applications built with React.js.
+[Check out the website here.](https://react-collection.netlify.app/)
+
+This collection was created as a portfolio piece and a showcase for
+several mini-apps built during my time as a software developer. I have
+tried to create a fun and vibrant experience where the individual apps
+can be enjoyed as much as the website as a whole. This is mainly a
+front-end project, with the exception of the banking-app interacting
+with an
+[exchange rate API](https://www.exchangerate-api.com/)
+to get up to date exchange rates.
+
+## Planned updates:
+
+- As of Ver. 1.0.0 the website doesn't support mobile view. It is
+  built with flexbox therefore responsive by default. More media
+  queries needed however and some structural styling changes to
+  fully support mobile screens.
+
+- The 3 apps have been developed in 3 different stages throughout my
+  software developer career. The Cocktail Recipe Generator was one
+  of the first fully fledged app I have built with React.js. The
+  Task Tracker is a recent development using hooks. I would like to
+  bring all apps' code to an even codebase to make it more unified
+  and easier to support in the future.
+
+- Due to the class based code style of the Cocktail Recipe
+  Generator, the page animation hasn't been applied to the app. This
+  will be corrected once the codebase is even across all apps.
+
+- Currently only the Task Tracker app has an about page which
+  details functionality and user journey. I would like to add this
+  feature to the other apps as well.
+
+Feel free to look through the code and check out how it's structured. Please
+let me know if you'd like to clone the project or contribute to it.
 
 Libraries used throughout the projects include:
 
-- react-router-dom
-- react-icons
-- axios
-- moment.js
-- react-spring
+- [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+- [react-icons](https://react-icons.github.io/react-icons/)
+- [axios](https://github.com/axios/axios)
+- [moment.js](https://momentjs.com/)
+- [react-spring](https://react-spring.io/basics)
+
+## Version 1.0.0 (production update)
+
+- Animated the Banking Interface and the Task Tracker Page.
+- Added an 'about' page to the website.
+- Populated the 'about' page.
+- Added an 'about' link to the navbar.
+- Added a version indicator to footer.
+- Code linting.
+- Minor changes in CSS styling.
+- Separate style sheets has been created for footer and navbar.
+- Gitignore has been updated.
+- Updated 'Readme' with correct markdown syntax.
+- Added metadata for optimal link sharing.
 
 ## Version 0.8.2
 

@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import TaskApp from "./projects/task/TaskApp";
 import BankingApp from "./projects/banking/BankingApp";
 import CocktailApp from "./projects/cocktail/CocktailApp";
+import About from "./components/About";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path="/projects">
               <ChooseScreen />
+            </Route>
+            <Route path="/about">
+              <About />
             </Route>
             <Route path="/tasktracker">
               <TaskApp />

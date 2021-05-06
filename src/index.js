@@ -8,6 +8,8 @@ import "./styles/ChooseScreen.css";
 import "./styles/BankingApp.css";
 import "./styles/CocktailApp.css";
 import "./styles/TaskApp.css";
+import "./styles/Navbar.css";
+import "./styles/Footer.css";
 
 ReactDOM.render(
   <React.StrictMode>
