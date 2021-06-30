@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
       <Navbar backPath={"/projects"} />
-      <animated.div style={styles} className="about-main-div container">
+      <animated.div style={styles} className="about-main-div">
         <h2>About the website</h2>
         <p>
           This collection was created as a portfolio piece and a showcase for

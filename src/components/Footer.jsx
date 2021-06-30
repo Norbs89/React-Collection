@@ -34,7 +34,7 @@ const Footer = () => {
         {">"}FreeCodeCamp_
       </a>
       <span className="ver-num">
-        {"{"}Ver. 1.0.0{"}"}
+        {"{"}Ver. 1.0.1{"}"}
       </span>
     </footer>
   );

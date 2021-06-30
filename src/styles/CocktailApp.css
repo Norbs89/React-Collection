@@ -1,5 +1,5 @@
 .c-container {
-  height: 100%;
+  max-height: 100%;
   width: 50%;
   margin: 2em auto;
   border: 0.05px solid black;
@@ -82,4 +82,10 @@
 
 .bold-text {
   font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+  .c-container {
+    width: 70%;
+  }
 }

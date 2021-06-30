@@ -26,3 +26,21 @@
 .ver-num {
   font-size: 0.8em;
 }
+
+@media (max-width: 800px) {
+  .footer-link {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-link {
+    padding: 0.2rem 0;
+  }
+  .app-footer {
+    margin-top: 0;
+    max-height: 20%;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+}

@@ -46,6 +46,14 @@ Libraries used throughout the projects include:
 - [moment.js](https://momentjs.com/)
 - [react-spring](https://react-spring.io/basics)
 
+## Version 1.0.1
+
+- Homepage is now optimised for smaller laptops, tablets & mobile.
+- Footer is now optimised for smaller laptops, tablets & mobile.
+- "Choose screen" is now optimised for smaller laptops, tablets & mobile.
+- "About Page" is now optimised for smaller laptops, tablets & mobile.
+- Background images have been scaled for faster loading times.
+
 ## Version 1.0.0 (production update)
 
 - Animated the Banking Interface and the Task Tracker Page.

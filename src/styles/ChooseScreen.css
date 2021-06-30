@@ -24,7 +24,7 @@
 .card {
   display: flex;
   flex-flow: column wrap;
-  max-width: 26%;
+  max-width: 30%;
   background: rgba(238, 241, 239, 0.9);
   text-decoration: none !important;
   box-shadow: 2px 2px 4px rgba(20, 17, 21, 0.6);
@@ -52,4 +52,54 @@
   color: #141115;
   padding: 4%;
   font-size: 1.1em;
+}
+@media (max-width: 1050px) {
+  .project-main-div h2 {
+    font-size: 1.5em;
+  }
+  .card h4 {
+    font-size: 1.4em;
+  }
+  .card p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .card {
+    max-width: 72%;
+    margin: 0.5rem;
+  }
+  .card h4 {
+    padding: 1%;
+  }
+  .card p {
+    padding: 3%;
+    font-size: 1em;
+  }
+}
+@media (max-width: 600px) {
+  .project-main-div {
+    padding-top: 1rem;
+  }
+  .project-main-div h2 {
+    font-size: 1.3em;
+    padding: 1% 5%;
+    max-width: 90%;
+    text-align: center;
+  }
+  .card {
+    max-width: 90%;
+  }
+  .card p {
+    font-size: 0.9em;
+  }
+  .card h4 {
+    font-size: 1.2em;
+  }
 }

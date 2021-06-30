@@ -1,6 +1,5 @@
 .bttn {
   text-transform: uppercase;
-  text-decoration: none !important;
   display: block;
   transition: all 0.25s ease-in-out;
   text-align: center;
@@ -8,9 +7,7 @@
 }
 
 .bttn-main {
-  width: 10em;
-  height: 3.5em;
-  line-height: 3.5em;
+  padding: 1rem;
   background-color: #ccff00;
   margin: 2em auto;
   color: #66717e;
@@ -108,4 +105,10 @@
   padding: 0.6em;
   border-radius: 1px;
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .bttn-main {
+    padding: 0.8rem;
+  }
 }
