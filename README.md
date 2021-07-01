@@ -15,10 +15,11 @@ to get up to date exchange rates.
 
 ## Planned updates:
 
-- As of Ver. 1.0.0 the website doesn't support mobile view. It is
+- ~~As of Ver. 1.0.0 the website doesn't support mobile view. It is
   built with flexbox therefore responsive by default. More media
   queries needed however and some structural styling changes to
-  fully support mobile screens.
+  fully support mobile screens.~~
+  ( The website is now compatible with small laptops, tablets and mobile.)
 
 - The 3 apps have been developed in 3 different stages throughout my
   software developer career. The Cocktail Recipe Generator was one
@@ -45,6 +46,13 @@ Libraries used throughout the projects include:
 - [axios](https://github.com/axios/axios)
 - [moment.js](https://momentjs.com/)
 - [react-spring](https://react-spring.io/basics)
+
+## Version 1.0.2
+
+- "Cocktail Generator" is now optimised for smaller laptops, tablets & mobile.
+- "Banking Interface" is now optimised for smaller laptops, tablets & mobile.
+- "Task Tracker" is now optimised for smaller laptops, tablets & mobile.
+- Code linting.
 
 ## Version 1.0.1
 

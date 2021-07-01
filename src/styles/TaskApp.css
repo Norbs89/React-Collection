@@ -88,3 +88,51 @@
   max-width: 90%;
   margin: auto;
 }
+
+@media (max-width: 1050px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 80%;
+  }
+  .header h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1.5em 1em;
+  }
+  .header h2 {
+    font-size: 1.2em;
+  }
+  .task {
+    margin: 1em;
+  }
+  .task h3 {
+    font-size: 1em;
+  }
+  .task p {
+    font-size: 0.9em;
+  }
+  .task-footer {
+    font-size: 0.9em;
+  }
+  .form-control {
+    margin: 1em;
+  }
+
+  .form-control label {
+    font-size: 0.9em;
+  }
+
+  .form-control .tbox {
+    width: 90%;
+    font-size: 0.9em;
+  }
+}

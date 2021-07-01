@@ -8,11 +8,11 @@ const ModifyAmountForm = ({ modifyAmount, handleInput, value, currency }) => {
         e.preventDefault();
       }}
     >
-      <span>
+      <span className="custom-amount">
         <label className="bold-text" htmlFor="addCustomValue">
-          Please Enter Amount:
+          Please Enter Amount in {currency}:
         </label>
-        <span> {currency}</span>
+
         <input
           type="text"
           id="addCustomValue"
