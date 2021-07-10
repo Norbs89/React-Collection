@@ -13,6 +13,7 @@
   flex-flow: column wrap;
   margin: auto;
   text-align: center;
+  max-height: inherit;
 }
 
 .cocktail-header,

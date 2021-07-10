@@ -18,7 +18,7 @@ const Footer = () => {
         {">"}LinkedIn_
       </a>
       <a
-        href="https://norbs89.github.io/"
+        href="https://norbs89.vercel.app/"
         className="footer-link"
         target="_blank"
         rel="noopener noreferrer"
@@ -34,7 +34,7 @@ const Footer = () => {
         {">"}FreeCodeCamp_
       </a>
       <span className="ver-num">
-        {"{"}Ver. 1.0.2{"}"}
+        {"{"}Ver. 1.0.3{"}"}
       </span>
     </footer>
   );

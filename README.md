@@ -47,6 +47,11 @@ Libraries used throughout the projects include:
 - [moment.js](https://momentjs.com/)
 - [react-spring](https://react-spring.io/basics)
 
+## Version 1.0.3
+
+- Portfolio footer link is updated.
+- Code linting.
+
 ## Version 1.0.2
 
 - "Cocktail Generator" is now optimised for smaller laptops, tablets & mobile.
